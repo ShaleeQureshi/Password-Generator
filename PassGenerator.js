@@ -92,8 +92,13 @@ document.getElementById("btnGenerate").addEventListener("click", function(e) {
     ) {
         alert("Not all options can be false! Ensure at least 1 is true!");
     } else {
-        length = document.getElementById("length").value;
-        setPass();
+        let currLength = document.getElementById("length").value;
+        if (currLength < 8 || currLength > 2048) {
+            alert("Length must be between 8-2048 characters");
+        } else {
+            length = document.getElementById("length").value;
+            document.getElementById("password").value = getPassword();
+        }
     }
 });
 
