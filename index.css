@@ -23,6 +23,11 @@ html {
     background-color: #DFCCFF;
 }
 
+.button :focus {
+    outline: none;
+    box-shadow: none;
+}
+
 footer {
     background-color: #F8F9Fa;
 }
