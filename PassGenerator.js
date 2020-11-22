@@ -97,7 +97,7 @@ document.getElementById("btnGenerate").addEventListener("click", function(e) {
             alert("Length must be between 8-2048 characters");
         } else {
             length = document.getElementById("length").value;
-            document.getElementById("password").value = getPassword();
+            setPass()
         }
     }
 });
