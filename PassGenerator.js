@@ -93,9 +93,22 @@ document.getElementById("btnGenerate").addEventListener("click", function(e) {
         alert("Not all options can be false! Ensure at least 1 is true!");
     } else {
         length = document.getElementById("length").value;
-        document.getElementById("password").value = getPassword();
+        setPass();
     }
 });
+
+function setPass() {
+    const currentPassword = document.getElementById("password").value;
+    if (password === currentPassword) {
+        numberOfLowerCase = 0;
+        numberOfUpperCase = 0;
+        numberOfNumbers = 0;
+        numberOfSpecialCharacters = 0;
+        password = "";
+        document.getElementById("password").value = "";
+    }
+    document.getElementById("password").value = getPassword();
+}
 
 document.getElementById("btnCopy").addEventListener("click", function(e) {
     e.preventDefault();
