@@ -1,0 +1,28 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#img {
+    background-image: url("./jumbo.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+#root {
+    padding-top: 150px;
+}
+
+.button {
+    background-color: #DFCCFF;
+}
+
+footer {
+    background-color: #F8F9Fa;
+}
